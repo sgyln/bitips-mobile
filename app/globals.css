@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Design tokens — values copied from the Figma variables (BITIPS file) */
+@theme {
+  --color-bg-primary: #fbf9f5;          /* bg/primary */
+  --color-bg-secondary: #f2ece4;        /* bg/secondary */
+  --color-text-primary: #191614;        /* text/primary */
+  --color-text-secondary: #6e6862;      /* text/secondary */
+  --color-action-primary: #191614;      /* action/primary */
+  --color-surface-card: #ffffff;        /* surface/card */
+  --color-border: #e5ddd3;              /* border */
+  --color-highlight: #f59e0b;           /* highlight */
+  --color-brand-interactive: #3d6473;   /* brand/interactive */
+  --color-time-morning: #fde68a;        /* time/morning */
+  --color-time-afternoon: #e0e7ff;      /* time/afternoon */
+  --color-time-evening: #d1fae5;        /* time/evening */
+  --color-badge-estimated-bg: #fef3c7;  /* badge/estimated-bg */
+  --color-badge-estimated-fg: #b45309;  /* badge/estimated-fg */
+  --color-success: #15803d;             /* success */
+  --color-accent-deficit: #e8592a;      /* accent/deficit */
+
+  /* Map canvas (hard-coded in the frame, not variables) */
+  --color-map-land: #e9e4d8;
+  --color-map-grid: #d8d0c0;
+  --color-map-water: #bfd3da;
+
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", system-ui, sans-serif;
+  --shadow-sheet: 0px -4px 16px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Text styles from Figma */
+@utility type-headline-medium { font-size: 28px; line-height: 36px; font-weight: 600; letter-spacing: -0.5px; }
+@utility type-title-medium { font-size: 16px; line-height: 24px; font-weight: 500; letter-spacing: 0; }
+@utility type-body-regular { font-size: 14px; line-height: 20px; font-weight: 400; letter-spacing: 0; }
+@utility type-body-strong { font-size: 14px; line-height: 20px; font-weight: 600; letter-spacing: 0; }
+@utility type-label-small { font-size: 11px; line-height: 16px; font-weight: 500; letter-spacing: 0.5px; }
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+body { background: var(--color-bg-primary); font-family: var(--font-sans); }
